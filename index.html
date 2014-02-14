@@ -3,9 +3,19 @@
 	<head>
 		<title>Happy Valentine's Day!</title>
 		<meta charset="UTF-8">
+		<link href='http://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope' rel='stylesheet' type='text/css'>
 		<style>
 			body {
 				background-color: #e7e7e7;
+			}
+			.content {
+				margin: 0 auto;
+				width: 400px;
+				padding: 20px 0;
+				font-size: 28px;
+			}
+			.cursive {
+				font-family: 'Annie Use Your Telescope', cursive;
 			}
 			.centered {
   				margin: auto;
@@ -13,6 +23,7 @@
   				top: 0; left: 0; bottom: 0; right: 0;
 			}
 			.love {
+				position: relative;
 				width: 400px;
 				height: 400px;
 			}
@@ -22,13 +33,20 @@
 				text-align: center;
 				font-size: 82px;
 				color: #fff;
+				z-index: 100;
 			}
 		</style>
 	</head>
 	<body>
-		<div class="centered love">
+		<div class="content cursive">
+			<p>Dear Beth,</p>
+		</div>
+		<div class="content love">
 			<span class="centered thai">ผมรักคุณ</span>
 			<img src="love.svg" class="love">
+		</div>
+		<div class="content cursive">
+			Tyler
 		</div>
 	</body>
 </html>
